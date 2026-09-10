@@ -9,6 +9,72 @@ Built for Norr Studio, a clothing brand.
 
 ---
 
+## Agent in action
+
+Screenshots from development and testing, shown in workflow order. These captures span multiple test runs, so some names and conversation details differ.
+
+### 1. Identify buying intent
+
+The agent asks whether the Shopify order is for personal use or a business.
+
+![1. Identify buying intent](docs/screenshots/01-intent.png)
+
+### 2. Qualify the lead
+
+The agent collects seasonal volume and budget. This capture also includes an earlier test before the pre-booking questions were fixed.
+
+![2. Qualify the lead](docs/screenshots/02-qualification.png)
+
+### 3. Offer a call and collect business details
+
+After the customer accepts, the agent asks for the shop name and whether stock is needed immediately or next season.
+
+![3. Offer a call and collect business details](docs/screenshots/03-call-offer.png)
+
+### 4. Collect meeting details and confirm email
+
+The agent clarifies the date, morning or evening, and timezone, then asks the customer to confirm or replace the invitation email.
+
+![4. Collect meeting details and confirm email](docs/screenshots/04-meeting-details.png)
+
+### 5. Book the meeting
+
+When the requested slot is unavailable, the agent offers another time. After acceptance, it shares the booking confirmation and Google Meet link.
+
+![5. Book the meeting](docs/screenshots/05-meeting-booked.png)
+
+### 6. Send the confirmation email
+
+The customer receives an email containing the meeting time, timezone, and Google Meet link.
+
+![6. Send the confirmation email](docs/screenshots/06-confirmation-email.png)
+
+### 7. Deliver the calendar invitation
+
+The invitation email includes the meeting details, guests, and Google Meet joining option.
+
+![7. Deliver the calendar invitation](docs/screenshots/07-calendar-email.png)
+
+### 8. Create the Google Calendar event
+
+The scheduled call appears in Google Calendar with its meeting link and attendees.
+
+![8. Create the Google Calendar event](docs/screenshots/08-calendar-event.png)
+
+### 9. Notify the sales team
+
+A Slack notification includes the booked call, qualification details, order information, and meeting link.
+
+![9. Notify the sales team](docs/screenshots/09-slack-notification.png)
+
+### 10. Record the lead in HubSpot
+
+The contact record includes a note with qualification details and the booked meeting.
+
+![10. Record the lead in HubSpot](docs/screenshots/10-crm-note.png)
+
+---
+
 ## How it works
 
 1. **Customer orders on Shopify.** Shopify POSTs to `/hooks/shopify`.
